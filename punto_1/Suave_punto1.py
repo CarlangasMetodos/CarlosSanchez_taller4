@@ -29,8 +29,11 @@ def image_preprocessing(file_path):
     return img_gray
 
 """
-#Metodo que calcula la transformada de Fourier en una dimension
+#Nota: Esta implementacion me arrojaba un valor para las transformadas que, creo, que no funciona correctamente,
+#Por eso decidi continuar el ejercicio con las implementaciones puestas en las otras funciones.
 
+#Metodo que calcula la transformada de Fourier en una dimension
+ 
 N=len(ndarray)
 g=ndarray
 n=[]
@@ -46,6 +49,7 @@ mult=exponencial*g
 Fourier.append(mult)
 """
 
+
 #Metodo para hacer la transformada de Fourier en una dimension, a partir de la multiplicacion entre dos arreglos 
 
 def fourier_transform_1d(ndarray):
@@ -55,6 +59,7 @@ def fourier_transform_1d(ndarray):
     M = np.exp(-1j *2* np.pi * k * n / N)
     return np.dot(M, ndarray)
 
+
 #Calcula la transformada inversa de Fourier en una dimension, a partir de la interpretacion previa
 
 def inv_fourier_transform_1d(ndarray):
@@ -63,6 +68,7 @@ def inv_fourier_transform_1d(ndarray):
     k = n.reshape((N, 1))
     M = np.exp(1j *2* np.pi * k * np.divide(n, N))
     return np.divide(np.dot(M, ndarray), N)
+
 
 #Calcula la transformada de Fourier en dos dimensiones
 
