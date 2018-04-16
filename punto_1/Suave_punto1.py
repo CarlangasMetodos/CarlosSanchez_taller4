@@ -30,7 +30,7 @@ def image_preprocessing(file_path):
 
 """
 #Nota: Esta implementacion me arrojaba un valor para las transformadas que, creo, que no funciona correctamente,
-#Por eso decidi continuar el ejercicio con las implementaciones puestas en las otras funciones.
+#Por eso decidi continuar el ejercicio con las implementaciones puestas en las otras funciones. :(
 
 #Metodo que calcula la transformada de Fourier en una dimension
  
